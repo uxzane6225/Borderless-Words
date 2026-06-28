@@ -1,0 +1,142 @@
+@import url("style.css");
+
+.formPage {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1.2fr 1fr;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.form {
+	height: 80vh;
+	width: 50%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px gray;
+}
+
+.formTitle {
+	font-size: 2.5em;
+}
+
+.inputSection {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.formInput {
+	height: fit-content;
+	padding: 10px;
+	font-size: 22px;
+	background-color: #F9E8E8;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+}
+
+#passwordSection {
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#password, #confirmPassword {
+	padding: 2px;
+	width: 100%;
+	font-size: 22px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.showPassword {
+	padding: 5px;
+	width: 5em;
+	background-color: #0C00F6;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.showPassword:hover {
+	background-color: hsla(243, 100%, 48%, 0.8);
+}
+
+#noAcc {
+	align-self: end;
+	width: fit-content;
+	text-align: right;
+	font-size: 16px;
+}
+
+.notice {
+	text-align: right;
+	font-size: 16px;
+	color: red;
+}
+
+.formBtn {
+	text-align: bottom;
+	padding: 12px;
+	width: 100%;
+	background-color: #0C00F6;
+	color: white;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: 0.3s;	
+}
+
+.formBtn:hover {
+	background-color: hsla(243, 100%, 48%, 0.8);
+}
+
+.bgDesign {
+	height: 100vh;
+	color: white;
+}
+
+.bgDesign h1 {
+	position: absolute;
+	right: 16%;
+	top: 25%;
+	font-size: 2em;
+}
+
+@media (max-width: 1023px) {
+	.formPage {
+		width: 100%;
+		display: block;
+	}
+
+	.form {
+		height: 100%;
+		width: 100%;
+		background-color: transparent;
+		box-shadow: none;
+		/* padding: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: white;
+		border-radius: 20px;
+		box-shadow: 0px 0px 5px gray; */
+	}
+
+	.bgDesign {
+		display: none;
+	}
+}

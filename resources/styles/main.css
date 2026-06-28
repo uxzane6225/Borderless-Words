@@ -1,0 +1,797 @@
+@import url("style.css");
+
+
+
+/*----------------[[[[[[[[ Header ]]]]]]]]----------------*/
+.mainPagesHeader {
+	height: fit-content;
+	background-color: white;
+	box-shadow: 0px 0px 5px lightgray;
+}
+
+.navbar {
+	padding: 10px;
+	display: flex;
+}
+
+.navbar a {
+	padding: 10px 15px;
+	text-decoration: none;
+	color: black;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.navbar a:hover {
+	background-color: lightgray;
+}
+
+
+
+/*----------------[[[[[[[[ Main ]]]]]]]]----------------*/
+.mainPagesBody {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+
+/*--------[[[[ Profile ]]]]--------*/
+.profileCard {
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	gap: 20px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px lightgray;
+}
+
+#profilePic {
+	width: 200px;
+	height: 200px;
+	background-color: lightgray;
+	border: none;
+	border-radius: 100px;
+}
+
+.profileContent {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.profileContent h1 {
+	font-size: 30px;
+}
+
+
+/*--------[[[[ Bottom Content ]]]]--------*/
+.bottomContent {
+	display: grid;
+	grid-template-columns: 1fr 3.8fr;
+	gap: 30px;
+	width: 100%;
+}
+
+
+/*----[[ Menu ]]----*/
+.menu {
+	padding: 20px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: white;
+	box-shadow: 0px 0px 10px lightgray;
+	border-radius: 20px;
+}
+
+.menu h2 {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+.menuContent {
+	display: flex;
+	flex-direction: column;
+}
+
+.menuBtn {
+	padding: 10px 80px;
+	background-color: transparent;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.menuBtn:hover {
+	background-color: lightgray;
+}
+
+#logoutBtn {
+	width: 100%;
+}
+
+/*----[[ Selected Content ]]----*/
+.selectedContent {
+	padding: 20px;
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px lightgray;
+	overflow-y: scroll;
+}
+
+.selectedContentHeader h2 {
+	font-size: 30px;
+}
+
+.selectedContentMain {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.formInput {
+	padding: 10px;
+	background-color: #F9E8E8;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	resize: none;
+}
+
+.formInput[type=file] {
+	cursor: pointer;
+}
+
+.formInput textarea {
+	height: 100px;
+}
+
+
+.selectedContentBtn {
+	padding: 10px 80px;
+	width: fit-content;
+	background-color: #0C00F6;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.selectedContentBtn:hover {
+	background-color: hsla(243, 100%, 48%, 0.8);
+}
+
+.hidden {
+	display: none;
+}
+
+
+/*--------[[[[ Translators Page ]]]]--------*/
+#translatorsPage {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+
+
+.filters {
+	padding: 20px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px lightgray;
+}
+
+.filters h2 {
+	font-size: 30px;
+}
+
+.categories {
+	display: flex;
+	flex-direction: column;
+}
+
+.categories input, .categories label{
+	width: fit-content;
+}
+
+#translatorsList {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.translatorArticle {
+	padding: 10px;
+	display: flex;
+	gap: 10px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px lightgray;
+}
+
+.translatorArticle img {
+	width: 150px;
+	height: 150px;
+	background-color: lightgray;
+	border-radius: 100px;
+}
+
+.translatorContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.translatorContent p {
+	font-size: 16px;
+}
+
+.translatorDescription h2 {
+	font-size: 30px;
+}
+
+.translatorButton button {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.translatorBottom {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.translatorBottom p {
+	font-size: 15px;
+}
+
+.language {
+	padding: 5px;
+	width: fit-content;
+	background-color: lightgray;
+	border-radius: 20px;
+}
+
+
+.languages {
+	display: flex;
+}
+
+.viewControls {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
+
+.hireBtn {
+	padding: 5px 20px;
+	width: fit-content;
+	background-color: #0C00F6;
+	color: white;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.hireBtn:hover {
+	background-color: hsla(243, 100%, 48%, 0.8);
+}
+
+#msgBtn {
+	padding: 5px 20px;
+	color: black;
+	background-color: rgb(224, 224, 224);
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#msgBtn:hover {
+	background-color: rgb(202, 200, 200);
+}
+
+.history {
+	padding: 20px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px lightgray;
+}
+
+.history h2 {
+	font-size: 30px;
+}
+
+.fltrBtn {
+	padding: 5px;
+	font-size: 16px;
+	background-color: #0C00F6;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.fltrBtn:hover {
+	background-color: hsla(243, 100%, 48%, 0.8);
+}
+
+.fltrBtn[name=clearBtn] {
+	background-color: #8494FF;
+}
+
+.fltrBtn:hover[name=clearBtn] {
+	background-color: rgb(83, 102, 226);
+}
+
+
+
+
+
+.aboutContent {
+	padding: 20px;
+	height: 100%;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
+	gap: 20px;
+	background-color: white;
+	border-radius: 20px;	
+	box-shadow: 0px 0px 10px lightgray;
+	text-align: center;
+}
+
+.aboutContent h1 {
+	margin-bottom: 5px;
+	font-size: 40px;
+}
+
+
+
+#jobsContent {
+	justify-content: start;
+}
+
+.jobTableDiv {
+	height: 100%;
+	background-color: lightgray;
+	overflow: hidden;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border: solid blue;
+}
+
+.jobTable {
+	border-collapse: collapse;
+}
+
+.jobHead {
+	background-color: blue;
+	color: white;
+}
+
+.jobHeader, .jobContent {
+	padding: 5px;
+}
+
+.jobRow {
+	text-align: center;
+	border-bottom: solid rgb(187, 184, 184);
+}
+
+.jobRow:nth-of-type(even) {
+	background-color: gray;
+}
+
+
+#contactPage {
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contactContent {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	background-color: white;
+	width: 50%;
+	justify-content: space-between;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px lightgray;
+}
+
+.contactContent h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.contactInputs {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 5px;
+}
+
+.contactInputs label {
+	font-size: 25px;
+	margin-left: 10px;
+}
+
+.contactInputs input, .contactInputs textarea {
+	padding: 5px 10px;
+	font-size: 20px;
+	background-color: lightgray;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+}
+
+.contactInputs textarea {
+	height: 200px;
+	resize: none;
+}
+
+#submitContact {
+	padding: 10px 20px;
+	width: 25%;
+	background-color: blue;
+	color: white;
+	outline: none;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#cancelContact {
+	padding: 10px 20px;
+	width: 25%;
+	background-color: gray;
+	color: white;
+	outline: none;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#submitContact:hover {
+	background-color: rgb(54, 54, 255);
+}
+
+#cancelContact:hover {
+	background-color: rgb(174, 170, 170);
+}
+
+.responseBtn {
+	padding: 3px 5px;
+	color: white;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+#acceptBtn {
+	background-color: blue;
+}
+
+#acceptBtn:hover {
+	background-color: rgb(54, 54, 255);
+}
+
+#rejectBtn {
+	background-color: red;
+}
+
+#rejectBtn:hover {
+	background-color: rgb(200, 10, 20);
+}
+
+.notice {
+	align-self: center;
+	padding: 3px 10px;
+	width: fit-content;
+	background-color: rgb(80, 80, 255);
+	color: white;
+	border-radius: 20px;
+}
+
+.mailPageMain {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.mailPageHeader {
+	display: flex;
+	gap: 10px;
+}
+
+.mailPageHeader h1 {
+	font-size: 40px;
+}
+
+.mails {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.mail {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px lightgray;
+}
+
+.mailContents {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.mailHeader {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.mailHeading {
+	font-size: 20px;
+}
+
+.mailBody {
+	font-size: 18px;
+}
+
+.mailDetail p, .mailHeader p {
+	font-size: 16px;
+	color: gray;
+}
+
+.mailControl {
+	display: flex;
+	align-items: end;
+	gap: 10px;
+}
+
+.mailBtn {
+	padding: 5px 10px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+#replyBtn {
+	background-color: blue;
+	color: white;
+}
+
+#replyBtn:hover {
+	background-color: rgb(68, 68, 255);
+	color: white;
+}
+
+#deleteBtn {
+	background-color: red;
+	color: white;
+}
+
+#deleteBtn:hover {
+	background-color: rgb(255, 69, 69);
+	color: white;
+}
+
+@media (max-width: 1023px) {
+	.navbar {
+		overflow-x: scroll;
+	}
+
+	.profileCard {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+
+	.bottomContent {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.selectedContent {
+		height: 100%;
+	}
+
+	.jobTableDiv {
+		overflow-x: scroll;
+	}
+
+	.jobContent {
+		padding: 10px;
+	}
+
+	.jobContent form {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	#contactPage {
+		height: 100%;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.contactContent {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		box-shadow: none;
+	}
+
+	#submitContact {
+		padding: 15px 5px;
+		width: 100%;
+	}
+
+	#cancelContact {
+		padding: 15px 5px;
+		width: 100%;
+	}
+
+	.aboutContent {
+		padding: 0;
+		width: 100%;
+		box-shadow: none;	
+	}
+
+	.filters {
+		text-size: 20px;
+	}
+
+	.filterBtns {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.fltrBtn {
+		padding: 10px 10px;
+	}
+
+	.categories h3 {
+		font-size: 25px;
+	}
+
+	.categories label {
+		font-size: 22px;
+	}
+
+	#translatorsPage {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.translatorArticle {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.translatorContent {
+		gap: 20px;
+	}
+
+	.translatorButton {
+		text-align: center;
+	}
+
+	.translatorDescription p {
+		font-size: 20px;
+	}
+
+	.language { 
+		padding: 10px;
+		font-size: 20px;
+	}
+
+	.mails {
+		gap: 25px;
+	}
+
+	.mail {
+		flex-direction: column;
+	}
+
+	.mailContents {
+		gap: 20px;
+	}
+
+	.mailHeader {
+		flex-direction: column;
+	}
+
+	.mailBtn {
+		font-size: 25px;
+	}
+
+	.viewControls form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.viewControls button {
+		padding: 10px;
+	}
+
+	.hireBtn {
+		width: 100%;
+	}
+
+	.history {
+		height: 100vh;
+	}
+
+	.historyContent {
+		overflow: scroll;
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+		height: 100%;
+	}
+}

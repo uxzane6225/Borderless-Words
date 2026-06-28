@@ -1,0 +1,110 @@
+@import url("style.css");
+
+
+main {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	padding: 20px;
+	height: fit-content;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px gray;
+}
+
+.containerHead {
+	margin-bottom: 30px;
+}
+
+.containerHead h1 {
+	font-size: 40px;
+}
+
+.containerContent {
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+.containerBtn {
+	padding: 10px 80px;
+	width: fit-content;
+	font-size: 40px;
+	background-color: #0C00F6;
+	color: white;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.containerBtn:hover {
+	background-color: hsla(243, 100%, 48%, 0.8);
+}
+
+#enterprise {
+	background-color: #8494FF;
+}
+
+#enterprise:hover {
+	background-color: hsla(232, 100%, 76%, 0.8);
+}
+
+.containerInputs {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.containerSectionInputs {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	gap: 2px;
+}
+
+.containerInput {
+	padding: 10px;
+	font-size: 30px;
+	resize: none;
+	background-color: #F9E8E8;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+}
+
+.containerInput[type=file] {
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+@media (max-width: 1023px) {
+	.container {
+		padding: 20px;
+		height: 100%;
+		width: 100%;
+		border-radius: none;
+		box-shadow: none;
+	}
+
+	.containerInputs {
+		width: fit-content;
+	}
+
+	.containerInput {
+		font-size: 25px;
+	}
+}

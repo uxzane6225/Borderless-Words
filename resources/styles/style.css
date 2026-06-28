@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/webBg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 1023px) {
+	body {
+		background-image: none;
+	}
+}

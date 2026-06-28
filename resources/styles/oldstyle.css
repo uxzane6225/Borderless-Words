@@ -1,0 +1,428 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	background-image: url("webBg.png");
+	backgrond-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.formPage {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+
+.form {
+	padding: 10px 20px;
+	height: 70%;
+	width: 380px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px gray;
+}
+
+.formTitle {
+	font-size: 40px;
+}
+
+.inputSection {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.formInput {
+	background-color: #F9E8E8;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+#fullName, #phone ,#email, #name, #address, #country {
+	padding: 5px;
+
+}
+
+.passwordSection {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	background-color: #F9E8E8;
+	border-radius: 5px;
+}
+
+#password {
+	width: 100%;
+	padding-right: 5px;
+	border: none;
+}
+
+#showPassword, #showConfirmPassword {
+	padding: 2px 5px;
+	background-color: darkgray;
+	color: white;	
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#showPassword:hover {
+	background-color: gray;
+}
+
+#accountType {
+	padding: 5px;
+	color: gray;
+}
+
+#noAcc {
+	text-align: right;
+	font-size: 15px;
+}
+
+.formBtn {
+	width: 100%;
+	padding: 10px 5px;
+	background-color: blue;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.formBtn:hover {
+	background-color: darkblue;
+}
+
+.bgDesign {
+	height: 100vh;
+}
+
+.bgDesign h1 {
+	margin-top: 50px;
+	font-size: 50px;	
+	color: white;
+}
+
+
+
+
+.container {
+	width: 50%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px gray;
+}
+
+.container h1 {
+	font-size: 40px;
+}
+
+
+.containerContent {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.containerContent button {
+	padding: 5px 20px;
+	border: none;
+	border-radius: 10px;
+	font-size: 35px;
+	width: 400px;
+	outline: none;
+	cursor: pointer;	
+}	
+
+.containerBtn {
+	background-color: hsl(243, 100%, 48%);
+	color: white;
+	transition: 0.3s;
+}
+
+.containerBtn:hover {
+	background-color: hsl(243, 100%, 58%);
+}
+
+.containerForm {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.containerForm input {
+	font-size: 30px;
+}
+
+#personal, #enterprise {
+	color: white;
+}
+
+#personal {
+	background-color: hsl(243, 100%, 48%);
+	transition: 0.3s;
+}
+
+#personal:hover {
+	background-color: hsl(243, 100%, 58%);
+}
+
+#enterprise {
+	background-color: hsl(232, 100%, 76%);
+	transition: 0.3s;
+}
+
+#enterprise:hover {
+	background-color: hsl(232, 100%, 86%);
+}
+
+nav {
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	gap: 3px;
+	background-color: white;
+	box-shadow: 0px 0px 10px gray;
+}
+
+nav a {
+	padding: 10px 10px;
+	text-decoration: none;
+	color: black;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+nav a:hover {
+	background-color: lightgray;
+}
+
+.profilePage {
+	padding: 20px;
+	height: 100%;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.profileCard {
+	padding: 20px;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px gray;
+}
+
+#profilePic {
+	width: 200px;
+	height: 200px;
+	border-radius: 360px;
+	background-color: lightgray;
+}
+
+.profileContent {
+	padding: 10px;
+}
+
+.profileContent h1 {
+	font-size: 30px;
+}
+
+
+.bottomContent {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.menu {
+	height: 300px;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px gray;
+}
+
+.menu h2 {
+	font-size: 35px;
+}
+
+.menuContent {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.menuContent button {
+	width: 100%;
+	padding: 5px 20px;
+	font-size: 25px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+.menuContent button:hover {
+	background-color: lightgray;
+}
+
+.editProfile {
+	padding: 20px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px gray;
+}
+
+.editProfile h1 {
+	font-size: 30px;	
+}
+
+.editForm {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+#newName, #newDescription {
+	padding: 5px;
+}
+
+.saveBtn {
+	width: 30%;
+}
+
+
+#translatorsPage {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	padding: 50px 30px;
+	align-items: start;
+	gap: 50px;
+}
+
+.filters {
+	padding: 20px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px gray;
+}
+
+.filters h2 {
+	font-size: 30px;
+}
+
+.categories {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.categories label{
+	width: fit-content;
+}
+
+#translatorsList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.translatorArticle {
+	padding: 10px;
+	display: flex;
+	gap: 20px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px gray;
+}
+
+.translatorArticle img {
+	width: 150px;
+	height: 150px;
+	background-color: gray;
+	border-radius: 100px;
+}
+
+.translatorContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.translatorDescription {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.translatorDescription h2 {
+	font-size: 1.2em;
+}
+
+.translatorDescription p {
+	font-size: 0.9em;
+}
+
+.translatorBottom p {
+	font-size: 0.8em;
+}
+
+.language {
+	padding: 5px 7px;
+	width: fit-content;
+	background-color: #D9D9D9;
+	border-radius: 20px;
+}
