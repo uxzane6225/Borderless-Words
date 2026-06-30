@@ -11,7 +11,11 @@
 </head>
 <body>
 	<header class="mainPagesHeader">
-		<nav class="navbar">
+		<button id="showNav">
+			<img src="../resources/images/logo.png" alt="Site Logo" id="logoNav">
+			<p>Borderless Words</p>
+		</button>
+		<nav class="navbar" id="navbar">
 			<?php if($_SESSION['role'] === "client"): ?>
 				<a href="clientTranslatorsPage.php" rel="noopener noreferrer">Translators</a>
 			<?php elseif($_SESSION['role'] === "translator"): ?>
@@ -29,5 +33,21 @@
 			<a href="mailPage.php" rel="noopener noreferrer">Mail</a>
 		</nav>
 	</header>
+	<script>
+		let navbar = document.getElementById('navbar');
+		const showNav = document.getElementById("showNav");
+
+		showNav.addEventListener('click', e => {
+			console.log("click");
+			if (navbar.classList.contains("hide")) {
+				navbar.classList.remove("hide");
+				console.log("flex");
+			}
+			else {
+				navbar.classList.add("hide");
+				console.log("none");
+			}
+		});
+	</script>
 </body>
 </html>
