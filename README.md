@@ -1,4 +1,4 @@
-# ITWS Project
+# ITAD Project
 ## Title
  - Translator Hiring Platform
 ## Made by
