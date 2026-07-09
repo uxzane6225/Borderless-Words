@@ -9,3 +9,7 @@
      1. Admin: Exclusing access to the Administrator pages and full permision for CRUD operations.
      2. Client: Hiring Translators.
      3. Translator: Accepting Requests.
+## Expected Output:
+• Updated source code of the front-end and back-end modules.
+• Progress report detailing completed features and pending tasks.
+• Screenshots or screen recordings demonstrating the current state of the system.
